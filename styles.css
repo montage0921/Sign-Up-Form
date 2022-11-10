@@ -19,11 +19,6 @@ body {
   gap: 480px;
 }
 
-.form-area {
-  background-color: blue;
-  width: 60vw;
-}
-
 .logo-area {
   top: 150px;
   height: 100px;
@@ -57,4 +52,34 @@ footer {
 
 footer a {
   color: white;
+}
+
+/* Form area */
+.form-area {
+  background-color: whitesmoke;
+  width: 60vw;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-area p {
+  width: 60%;
+  line-height: 24px;
+  margin-left: 30px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.first-para {
+  margin-top: 120px;
+}
+
+.second-para {
+  margin-top: 0;
+}
+
+.third-para {
+  margin-top: 12px;
 }
