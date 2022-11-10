@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  margin: 0%;
+}
+
+@font-face {
+  font-family: odin;
+  src: url(Sources/Norse-Bold.otf);
+}
+
+.picture-area {
+  width: 40vw;
+  height: 100vh;
+
+  background-image: url(Sources/background.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 480px;
+}
+
+.form-area {
+  background-color: blue;
+  width: 60vw;
+}
+
+.logo-area {
+  top: 150px;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(4, 4, 4, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: odin;
+  font-size: 4rem;
+  color: aliceblue;
+
+  margin-top: 150px;
+}
+
+img.logo {
+  height: 80%;
+}
+
+div.title {
+  margin-top: 10px;
+}
+
+footer {
+  font-size: small;
+  font-weight: 10;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+}
