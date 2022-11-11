@@ -10,7 +10,7 @@ body {
 
 .picture-area {
   width: 35vw;
-  height: 100vh;
+  height: 100%;
 
   background-image: url(Sources/background.jpg);
   background-size: cover;
