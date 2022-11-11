@@ -1,5 +1,6 @@
 const passwordInput = document.querySelector(`#password`);
 const passwordConfirmInput = document.querySelector(`#password-confirm`);
+const form = document.querySelector(`form`);
 
 const validationText = document.querySelector(`.password-validation`);
 const confirmTest = document.querySelector(`.password-validation-confirm`);
@@ -10,10 +11,12 @@ const symbolCondition = document.querySelector(`.third`);
 
 passwordInput.addEventListener(`focus`, function () {
   validationText.classList.remove(`hidden`);
+  form.style.height = `250px`;
 });
 
 passwordInput.addEventListener(`focusout`, function () {
   validationText.classList.add(`hidden`);
+  form.style.height = `150px`;
 });
 
 passwordInput.addEventListener(`input`, function () {
@@ -25,7 +28,7 @@ passwordInput.addEventListener(`input`, function () {
     lengthCondition.style.color = "green";
   } else lengthCondition.style.color = "red";
 
-  //if password contain at least one lower letteer,  one Upper character and one number
+  //if password contain at least one lower letter,  one Upper character and one number
   const passwordRequiredCase = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/;
 
   if (passwordRequiredCase.test(inputContent)) {
@@ -50,13 +53,16 @@ passwordInput.addEventListener(`input`, function () {
   }
 });
 
+/////////////////////////////////
 /////Confirm Password
 passwordConfirmInput.addEventListener(`focus`, function () {
   confirmTest.classList.remove(`hidden`);
+  form.style.height = `180px`;
 });
 
 passwordConfirmInput.addEventListener(`focusout`, function () {
   confirmTest.classList.add(`hidden`);
+  form.style.height = `150px`;
 });
 
 passwordConfirmInput.addEventListener(`input`, function () {
